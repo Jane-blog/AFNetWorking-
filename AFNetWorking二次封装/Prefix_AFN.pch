@@ -1,0 +1,27 @@
+//
+//  Prefix_AFN.pch
+//  AFNetWorking二次封装
+//
+//  Created by Jing  on 16/8/11.
+//  Copyright © 2016年 Jing . All rights reserved.
+//
+
+#ifndef Prefix_AFN_pch
+#define Prefix_AFN_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - 应用常用文件的头文件
+#import "UIImage+Compression.h"
+#import "NetWorkingManager.h"
+
+
+// 替代开发中Debug时的NSLog，release模式编译的程序不会用NSLog输出，而以debug模式编译的程序将执行NSLog的全部功能，在发布时不用再删除输出操作
+#ifdef DEBUG
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... )
+#endif
+
+#endif /* Prefix_AFN_pch */
