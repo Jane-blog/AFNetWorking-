@@ -108,7 +108,7 @@
     }
 }
 ```
-###这里就不一一列举了，如果有你需要的可以根据下载地址下载demo（https://github.com/FlyJing/AFNetWorking-.git）
+###这里就不一一列举了，如果有你需要的可以根据下载地址下载demo（https://github.com/CitrusHan/AFNetWorking-.git）
 
 ```
 #pragma mark - GET 请求网络数据
